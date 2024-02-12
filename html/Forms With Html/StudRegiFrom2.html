@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registeration Form 2</title>
+</head>
+<body>
+  
+  <form>
+    <h1>Student Registeration Form 2</h1>
+    <div class="container">
+        
+        <div>
+            <label for="fname">First Name</label>
+            <input type="text" placeholder="Enter First Name" >
+
+        </div>
+        <br>
+        <div>
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" placeholder="Enter Last Name">
+
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <span>
+                <input type="radio" name="gender">
+                <label for="gender">Male</label>
+                <input type="radio" name="gender">
+                <label for="gender">Female</label>
+            </span>
+
+        </div>
+        <div>
+            <label for="age">Age</label>
+            <input type="number" placeholder="Enter Your Age">
+        </div>
+        <div>
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob">
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" placeholder="Enter Your Email">
+        </div>
+        <div>
+            <label for="pass">Pasword</label>
+            <input type="password" name="pass" placeholder="Enter your password min 8 characters">
+        </div>
+        <div>
+            <label for="cpass">Confirm Pasword</label>
+            <input type="password" name="cpass" placeholder="Confirm Password">
+        </div>
+        <br><br>
+        <div>
+            <label for="phone">Phone Number</label>
+            <span>
+                <select name="phone">
+                    <option value="91">+91</option>
+                    <option value="56">+56</option>
+                    <option value="46">+46</option>
+                </select>
+                <input type="number" name="phone" placeholder="Enter your name">
+            </span>
+        </div>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" cols="30" rows="5" placeholder="Enter Your Address"></textarea>
+        </div>
+        <div>
+            <label for="state">State</label>
+            <select name="state" >
+                <option value="">--select your state--</option>
+                <option value="maharashtra">Maharashtra</option>
+                <option value="gujrat">Gujrat</option>
+            </select>
+        </div>
+        <div>
+            <label for="pincode">Pin Code</label>
+            <input type="number" name="pincode">
+        </div>
+        <div>
+            <label for="hobies">Hobies</label>
+            <span>
+                <input type="checkbox" name="hobies">
+                <label for="hobies">Music</label>
+            </span>
+            <span>
+                <input type="checkbox" name="hobies">
+                <label for="hobies">Movies</label>
+            </span>
+            <span>
+                <input type="checkbox" name="hobies">
+                <label for="hobies">Sports</label>
+            </span>
+            <span>
+                <input type="checkbox" name="hobies">
+                <label for="hobies">Travel</label>
+            </span>
+        </div>
+
+        <div>
+            <label for="photo">Upload Photo</label>
+            <span>
+                <p>*Max size 100kb</p>
+                
+            </span>
+            <span>
+                <input type="file" name="photo">
+            </span>
+        </div>
+        <div>
+            <input type="checkbox" name="term">
+            <label for="term">I hereby declare that the above information provided is true and correct</label>
+        </div>
+       
+    </div>
+  </form>  
+</body>
+</html>
