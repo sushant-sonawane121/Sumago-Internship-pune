@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.container {
+  height: 100vh;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: burlywood;
+  padding: 1rem;
+}
+
+.wraper {
+  /* border: 2px solid red; */
+  height: 80%;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 1rem;
+  background-color: white;
+  box-shadow: 0px 0px 17px 3px black;
+}
+.left,
+.right {
+  /* border: 1px solid green; */
+  height: 100%;
+  width: 50%;
+}
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.right h2 {
+  font-size: 2rem;
+  color: red;
+}
+.myform {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  padding: 2rem;
+}
+
+.fl-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.first-name,
+.last-name {
+  width: 45%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.form-input {
+  height: 2.1rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+}
+
+.form-btn {
+  border: 1px solid black;
+  background-color: rgb(39, 39, 223);
+  width: 30%;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.form-btn:hover {
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}

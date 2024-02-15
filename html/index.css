@@ -1,0 +1,68 @@
+.resume {
+  border: 5px solid red;
+  padding: 25px;
+  margin: 20px;
+  background-color: black;
+  color: aliceblue;
+}
+.container {
+  border: 5px dashed red;
+  padding: 25px;
+  margin: 20px;
+  background-color: blueviolet;
+}
+.header {
+  border: 3px dashed black;
+  padding: 15px 5px 15px 10px;
+  margin: 10px;
+  background-color: yellow;
+  color: green;
+}
+p {
+  color: red;
+  background-color: aqua;
+}
+.head {
+  color: red;
+  background-color: green;
+}
+#head2 {
+  border: 1px solid;
+  color: black;
+  background-color: aqua;
+}
+
+/* css for tabel */
+
+.mytable {
+  border: 1px solid black;
+}
+.mytable tbody tr td {
+  border: 1px solid black;
+}
+
+.mytable thead tr th {
+  border: 1px solid black;
+  background-color: yellow;
+}
+
+.mytable tbody tr:nth-child(odd) {
+  background-color: red;
+}
+.mytable tbody tr:nth-child(even) {
+  background-color: green;
+}
+.contact {
+  border: 3px solid black;
+  background-color: brown;
+  color: black;
+  padding: 25px;
+  margin: 30px;
+}
+.inputs {
+  border: 3px solid red;
+  background-color: blue;
+  color: red;
+  padding: 45px;
+  margin: 30px;
+}
