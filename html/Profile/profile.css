@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: blue;
+}
+.card {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  column-gap: 2rem;
+  background: rgb(255, 0, 99);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 99, 1) 0%,
+    rgba(172, 46, 203, 1) 50%,
+    rgba(22, 186, 196, 1) 100%
+  );
+}
+.left,
+.right {
+  border: 1px solid black;
+  height: 90%;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.left {
+  width: 30%;
+  row-gap: 2rem;
+}
+
+.right {
+  width: 50%;
+  row-gap: 5rem;
+  line-height: 2rem;
+}
+.profile-image {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
