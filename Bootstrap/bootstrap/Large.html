@@ -18,14 +18,14 @@
     <div class="container main-c">
         <header class="d-flex flex-row justify-content-between mt-2">
             <div>
-                <h3 class="fs-6">Subscribe</h3>
+                <h3 class="fs-6 text-body-tertiary" style="cursor: pointer;">Subscribe</h3>
             </div>
             <div class="header-logo">
-                <h2>Large</h2>
+                <h2 style="cursor: pointer;">Large</h2>
             </div>
-            <div>
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <button>Sign Up</button>
+            <div class="d-flex align-items-center justify-content-center gap-3">
+                <i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i>
+                <button class="btn btn-primory border border-1">Sign Up</button>
             </div>
         </header>
 
@@ -72,26 +72,82 @@
 
 
         <!-- code for main page banner -->
-        <div class="bg-dark text-light">
+        <div class="bg-dark text-light mt-4 rounded" style="height: 20rem;">
 
             <div class="container">
                 <div class="row">
-                    <div class="col text-left  border border-2 border-danger">
-                        <h2>Title of a Featured Blog Post</h2>
-                        <p>Multiple lines of text from the lede, informing new readers quickly and efficiently about
-                            what's most interesting in this post's contents.</p>
-                        <a href="#">Continue Reading...</a>
-                    </div>
+                    <div class="col text-left" style="height: 20rem;">
+                        <div class=" w-50 h-100 d-flex flex-column justify-content-center m-2">
 
+                            <h2>Title of a Featured Blog Post</h2>
+                            <p>Multiple lines of text from the lede, informing new readers quickly and efficiently about
+                                what's most interesting in this post's contents. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Nam veniam molestias nemo beatae soluta explicabo velit natus porro
+                                libero asperiores, at officia delectus iusto doloremque voluptate perspiciatis eius
+                                deserunt molestiae.</p>
+                            <a href="#">Continue Reading...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 d-flex justify-content-center gap-5">
+
+
+            <div class="card mb-3" style="max-width: 50%;">
+                <div class="row g-0 d-flex flex-row-reverse">
+                    <div class="col-md-4">
+                        <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="img-fluid rounded-end h-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h6 class="text-primary">Word</h6>
+                            <h5 class="card-title">Featured Post</h5>
+                            <p>Nov 12</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-primary">Continue reading</small></p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+
+            <div class="card mb-3" style="max-width: 50%;">
+                <div class="row g-0 d-flex flex-row-reverse">
+                    <div class="col-md-4">
+                        <img src="https://images.pexels.com/photos/270637/pexels-photo-270637.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            class="img-fluid rounded-end h-100" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h6 class="text-primary">Word</h6>
+                            <h5 class="card-title">Featured Post</h5>
+                            <p>Nov 12</p>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-primary">Continue reading</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
+
+
+
+
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
