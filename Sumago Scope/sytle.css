@@ -1,0 +1,22 @@
+
+
+.corw-section{
+    height: 50vh;
+}
+
+.pro-details{
+    position: relative;
+    height: 15rem;
+    
+}
+.pro-details::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('./images/back_buildings.jpg');
+    background-size: cover;
+  }
