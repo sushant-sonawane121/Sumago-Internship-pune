@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sumago - Scope</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./sytle.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Adjust map container size */
+        #map {
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky-top d-flex align-items-center justify-content-between p-3 shadow-sm bg-body-tertiary">
+        <div class="d-flex align-items-center justify-content-center gap-5">
+            <img src="./images/logo.png" alt="header logo" height="50" width="200" />
+            <div>
+                <select style="height: 3rem; width: 10rem"
+                    class="bg-danger rounded text-light border border-0 fs-5 text-center">
+                    <option value="">Our Courses</option>
+                </select>
+            </div>
+        </div>
+        <div class="w-50">
+            <nav class="d-flex align-items-center justify-content-between fs-5">
+                <a href="#" class="link-underline link-underline-opacity-0 text-black">About us</a>
+                <select class="border border-0">
+                    <option value="">Events</option>
+                </select>
+
+                <select class="border border-0">
+                    <option value="">Media</option>
+                </select>
+
+                <a href="#" class="link-underline link-underline-opacity-0 text-black">Contact Us</a>
+
+                <div>
+                    <button style="height: 3rem; width: 11rem" class="bg-danger rounded text-light border border-0">
+                        Apply Now ->
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!--  code for Contact form start -->
+
+
+    <div class="contact-form vh-100">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <!-- Map Section -->
+                    <h2>Our Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.798817169225!2d73.83299067470821!3d18.537991368642913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf98297b9707%3A0xbc722f3713c3edac!2sSumago%20Infotech%20Private%20Ltd.!5e0!3m2!1sen!2sin!4v1709016621037!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6">
+                    <!-- Contact Form Section -->
+                    <h2>Contact Us</h2>
+                    <form id="form" action="/" onsubmit="validateForm(e)">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender" name="gender" required>
+                                <option value="">Select</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn mt-2" style="background-color: #e15554;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--  code for Contact form end -->
+
+
+    <!-- footer offices -->
+    <footer class="footer bg-dark text-light pb-4">
+        <div class="footer-links d-flex align-items-center justify-content-between p-5">
+            <div class="w-25">
+                <h3>OUR MISSION</h3>
+                <div class="text-justify">
+                    <p>
+                        Our mission is to develop a skilled IT workforce in India,
+                        empowering individuals with accessible and affordable IT training
+                        to drive innovation & economic growth, and bridge the digital
+                        divide in the ever-evolving tech landscape.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3>QUICK LINKS</h3>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent border-0">
+                            <a href="#" class="text-light link-underline link-underline-opacity-0">Our Cources</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                            <a href="#" class="text-light link-underline link-underline-opacity-0">About Us</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                            <a href="#" class="text-light link-underline link-underline-opacity-0">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h3>FOLLOW US ON</h3>
+                <div>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent border-0">
+                            <i class="fa-brands fa-facebook text-light"></i>
+                            <a href="#" class="text-light link-underline link-underline-opacity-0">Facebook</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                            <i class="fa-brands fa-twitter text-light"></i>
+                            <a href="#" class="text-light link-underline link-underline-opacity-0">Twitter</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                            <i class="fa-brands fa-linkedin text-light"></i>
+                            <a href="#" class="text-light link-underline link-underline-opacity-0">Linkedin</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                            <i class="fa-brands fa-youtube text-light"></i>
+                            <a href="#" class="text-light link-underline link-underline-opacity-0">YouTube</a>
+                        </li>
+                        <li class="list-group-item bg-transparent border-0">
+                            <img src="./images/small_logo.png" alt="footer link logo" width="25" />
+                            <a href="#"
+                                class="text-light link-underline link-underline-opacity-0">sumagoinfotech.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer offices -->
+        <hr class="bg-dark" />
+
+        <div class="offices p-2">
+            <h3>Our offices</h3>
+            <div class="footer-cards h-25 d-flex align-items-center justify-content-evenly mt-5">
+
+                <!-- card 1 -->
+                <div class="w-25 border border-1 border-light rounded p-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="./images/india logo.png" alt="india logo" width="25" height="20" />
+                        <h4>CORPORATE OFFICE</h4>
+                    </div>
+                    <div class="d-flex gap-1 mt-2 text-light mt-2">
+                        <i class="fa-solid fa-house"></i>
+                        <p>
+                            Third Floor, Gajra Chambers, Mumbai - Agra National Hwy, Kamod
+                            Nagar, Indira Nagar, Nashik, Maharashtra 422009
+                        </p>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center gap-2">
+
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@sumagoinfotech.com</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91 8530388815</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 2 -->
+                <div class="w-25 border border-1 border-light rounded p-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="./images/india logo.png" alt="india logo" width="25" height="20" />
+                        <h4>NASHIK OFFICE</h4>
+                    </div>
+                    <div class="d-flex gap-1 mt-2 text-light mt-2">
+                        <i class="fa-solid fa-house"></i>
+                        <p>
+                            The Avenue, Fourth Floor, Behind Prakash Petrol Pump, Govind Nagar, Nashik, Maharashtra
+                            422009
+                        </p>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center gap-2">
+
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@sumagoinfotech.com</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91 8408084888</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card 3 -->
+                <div class="w-25 border border-1 border-light rounded p-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <img src="./images/india logo.png" alt="india logo" width="25" height="20" />
+                        <h4>PUNE OFFICE</h4>
+                    </div>
+                    <div class="d-flex gap-1 mt-2 text-light mt-2">
+                        <i class="fa-solid fa-house"></i>
+                        <p>Third Floor, Kakade Center Port, University Rd, near E-Square, Premnagar, Shivajinagar, Pune,
+                            Maharashtra
+                            411016</p>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center gap-2">
+
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>info@sumagoinfotech.com</p>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+91 7263084881</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+<script src="./script.js"></script>
+       
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<style>
+    .card {
+        box-shadow: 0px 0px 5px 1px rgb(0, 209, 209);
+        width: 18rem;
+        background-color: teal;
+        color: white;
+        height: 12rem;
+
+
+    }
+
+    .card:hover {
+        cursor: pointer;
+        color: black;
+        background-color: white;
+
+    }
+
+    .card:hover .card-icon {
+        color: teal;
+
+    }
+</style>
+
+<body>
+    <div>
+
+
+        <div class="container p-5">
+            <dic class="top-cards d-flex align-items-center justify-content-between flex-wrap gap-2">
+
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fa-solid fa-location-dot fs-1 mb-3 card-icon"></i>
+                        <h5 class="card-title mb-3">Office Location</h5>
+                        <p class="card-text">Mumbai Naka, bhabha nagar, Nashik</p>
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="fa-solid fa-phone fs-1 mb-3 card-icon"></i>
+                        <h5 class="card-title mb-3">Phone Number</h5>
+                        <p class="card-text">7588484848</p>
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-body">
+
+                        <i class="fa-solid fa-envelope fs-1 mb-3 card-icon"></i>
+                        <h5 class="card-title mb-3">Email Address</h5>
+                        <p class="card-text">this@ismail.co.in</p>
+                    </div>
+                </div>
+
+            </dic>
+
+            <div class="map-location d-flex align-items-center justify-content-center mt-5">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14997.283039817215!2d73.77788229370977!3d19.99504801692059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bddeb1b8d069849%3A0x8650696e6f0a5455!2sChoudhary%20Yatra%20Company!5e0!3m2!1sen!2sin!4v1709101047914!5m2!1sen!2sin"
+                    class="w-100" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="regi-form mt-5">
+                <h6 class="mb-4">fill Your Information</h6>
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Firast Name</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">last Name</label>
+                        <input type="text" class="form-control" id="inputEmail4">
+                        <!-- <label for="inputPassword4" class="form-label">Password</label> -->
+                        <!-- <input type="password" class="form-control" id="inputPassword4"> -->
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="inputEmail4">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Mobile Number</label>
+                        <input type="number" class="form-control" id="inputEmail4">
+
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputEmail4" class="form-label">Whatsapp Mobile number</label>
+                        <input type="number" class="form-control" id="inputEmail4">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Tour Title</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Tour Title</option>
+                            <option>Goa</option>
+                            <option>Gujrat</option>
+                            <option>Panjab</option>
+                            <option>Pune</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Select Gender</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Gender</option>
+                            <option>Male</option>
+                            <option>Female</option>
+                            <option>other</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Media Source</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Media Source</option>
+                            <option>What'a app</option>
+                            <option>Facebook</option>
+                            <option>Instagram</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Select Region</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Select region</option>
+                            <option>Sangamner</option>
+                            <option>Akola</option>
+                            <option>Pune</option>
+                            <option>Goa</option>
+                            <option>Panjab</option>
+                            <option>nashik</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Select Your Nearest Booking Center</label>
+                        <select id="inputState" class="form-select">
+                            <option selected>Booking center</option>
+                            <option>Nahsik</option>
+                            <option>Sangamner</option>
+                            <option>Pune</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a Message here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+
+
+
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary"
+                            style="float: right; background-color: teal; width: 10rem;">Sign in</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
